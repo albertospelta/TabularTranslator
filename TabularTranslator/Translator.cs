@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.ComponentModel;
+using TabularTranslator.ComponentModel;
 
 namespace TabularTranslator
 {
@@ -227,10 +228,10 @@ namespace TabularTranslator
             dgvTranslations.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
         }
 
-        private List<Culturelist> CreateListfromTranslation(Translations translations)
+        private SortableBindingList<Culturelist> CreateListfromTranslation(Translations translations)
         {
-            
-            List<Culturelist> clist = new List<Culturelist>();
+
+            SortableBindingList<Culturelist> clist = new SortableBindingList<Culturelist>();
             //Add model
             Culturelist listItem = new Culturelist();
             listItem.TranslatedObject = translations.model;

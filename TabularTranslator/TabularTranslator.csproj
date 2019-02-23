@@ -64,6 +64,7 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="ComponentModel\SortableBindingList.cs" />
     <Compile Include="Cultures.cs" />
     <Compile Include="HelperClass.cs" />
     <Compile Include="Translator.cs">
